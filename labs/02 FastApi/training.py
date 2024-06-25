@@ -1,6 +1,5 @@
 from sklearn import tree
 import pandas as pd
-from joblib import dump
 
 X = [[7.1, 7.3],
      [7.9, 7.5],
@@ -17,4 +16,4 @@ Y = [0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1]  # 0: Apple 1: Pear
 df = pd.DataFrame(X, columns=["width", "height"])
 classifier = tree.DecisionTreeClassifier()  # Choosing the algorithm
 model = classifier.fit(X, Y)  # Do the training on the data
-dump(model, 'trained-apple-pears.joblib')
+# TODO dump the trained model to a file
