@@ -23,7 +23,8 @@ RUN pip install --no-cache-dir \
     seaborn \
     fastapi \
     uvicorn \
-    jupyterlab
+    jupyterlab \
+    tensorflow
 
 # Expose FastAPI default port
 EXPOSE 8000 8888
