@@ -24,7 +24,8 @@ RUN pip install --no-cache-dir \
     fastapi \
     uvicorn \
     jupyterlab \
-    tensorflow
+    tensorflow \
+    python-multipart
 
 # Expose FastAPI default port
 EXPOSE 8000 8888
