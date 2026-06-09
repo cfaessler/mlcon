@@ -1,0 +1,9 @@
+# Core lab dependencies (notebooks + classical ML)
+pandas
+scikit-learn
+matplotlib
+seaborn
+jupyterlab
+ipykernel
+nbformat
+nbconvert
