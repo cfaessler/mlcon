@@ -2,6 +2,19 @@
 To get everything setup very easily we have created a docker container that has all the libraries installed you need for the labs.
 The container also contains local jupyter notebook server, so you can run all the notebooks locally.
 
+## Local setup (without Docker)
+
+Homebrew Python blocks global `pip install`. Use the project virtual environment instead:
+
+```bash
+python3.12 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+jupyter lab --ip=0.0.0.0 --port=8888 --no-browser
+```
+
+In Cursor/VS Code, select the kernel **"ML Con (.venv)"** or the interpreter at `.venv/bin/python`.
+
 # 1) Build the container
     $ docker build -t aikurs-container .
 
