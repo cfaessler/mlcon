@@ -7,3 +7,4 @@ jupyterlab
 ipykernel
 nbformat
 nbconvert
+mlflow>=2.10

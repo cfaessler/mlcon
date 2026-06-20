@@ -4,6 +4,9 @@
 __pycache__/
 .vscode/
 .ipynb_checkpoints/
+mlruns/
+mlflow.db
+mlartifacts/
 .pytest_cache/
 .ruff_cache/
 .mypy_cache/

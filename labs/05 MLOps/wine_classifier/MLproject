@@ -1,0 +1,25 @@
+name: wine-classifier
+
+python_env: python_env.yaml
+
+entry_points:
+  main:
+    parameters:
+      max_depth:
+        type: int
+        default: 3
+      min_samples_split:
+        type: int
+        default: 2
+      test_size:
+        type: float
+        default: 0.2
+      experiment_name:
+        type: str
+        default: wine-classifier-project
+    command: >
+      python train.py
+      --max-depth {max_depth}
+      --min-samples-split {min_samples_split}
+      --test-size {test_size}
+      --experiment-name {experiment_name}

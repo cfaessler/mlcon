@@ -1,0 +1,7 @@
+python: "3.12"
+build_dependencies:
+  - pip
+dependencies:
+  - mlflow>=2.10
+  - scikit-learn
+  - pandas
