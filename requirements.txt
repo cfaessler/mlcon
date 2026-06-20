@@ -1,6 +1,7 @@
 # Core lab dependencies (notebooks + classical ML)
 pandas
 scikit-learn
+scikit-optimize
 matplotlib
 seaborn
 jupyterlab
@@ -8,3 +9,4 @@ ipykernel
 nbformat
 nbconvert
 mlflow>=2.10
+evidently>=0.7

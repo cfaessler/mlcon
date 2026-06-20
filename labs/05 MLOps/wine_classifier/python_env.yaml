@@ -1,3 +1,5 @@
+# Dependencies for `mlflow run .` when NOT using --env-manager local.
+# Keep in sync with requirements.txt at the repo root.
 python: "3.12"
 build_dependencies:
   - pip

@@ -18,6 +18,7 @@ RUN apt-get update && apt-get install -y \
 RUN pip install --no-cache-dir \
     pandas \
     scikit-learn \
+    scikit-optimize \
     torch \
     torchvision \
     seaborn \
@@ -26,10 +27,12 @@ RUN pip install --no-cache-dir \
     jupyterlab \
     tensorflow \
     python-multipart \
-    torchsummary
+    torchsummary \
+    mlflow>=2.10 \
+    "evidently>=0.7"
 
-# Expose FastAPI default port
-EXPOSE 8000 8888
+# Expose Jupyter, FastAPI, MLflow UI, model serving, and Evidently UI ports
+EXPOSE 8000 8888 5050 5001 8080
 
 # Default command to run interactive bash
 CMD ["bash"]

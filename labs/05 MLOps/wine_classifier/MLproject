@@ -1,3 +1,5 @@
+# MLflow Project manifest — defines how to run train.py with parameters.
+# Example: mlflow run . --env-manager local -P max_depth=5
 name: wine-classifier
 
 python_env: python_env.yaml
