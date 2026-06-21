@@ -4,6 +4,14 @@
 __pycache__/
 .vscode/
 .ipynb_checkpoints/
+mlruns/
+mlflow.db
+mlartifacts/
+# Evidently (drift reports + monitoring UI workspace)
+evidently_drift_report.html
+evidently_workspace/
+labs/05 MLOps/workspace/
+labs/05 MLOps/00_mlops_intro_slides.md
 .pytest_cache/
 .ruff_cache/
 .mypy_cache/
